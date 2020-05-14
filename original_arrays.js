@@ -7,23 +7,33 @@ let anagrams = ["plots", "post", "stop", "puts", "tops"]
 // You're welcome to print additional debugging statements if you need.
 
 // 1. Print out the third word in the array using bracket notation.
-console.log(anagrams[2])
+
+
+
+
 
 // 2. The word "opts" is also an anagram of the word "stop". Find a way to add "opts" to the end of the array.
-anagrams.push("opts")
+
+
+
+
 
 // 3. The word "puts", on the other hand, is not an anagram of the word "stop". Find a way to replace it with the word "pots".
+
+
+
 
 
 // 4. Use the documentation to figure out what the method ".pop()" does.
 //   Now use it to remove the word "plots" (which isn't a correct anagram of "stop") from our array.
 
-anagrams.reverse()
-anagrams.pop()
+
+
+
 
 // 5. Put the final array of anagrams in alphabetical order.
 
-anagrams.sort()
+
 
 
 // LEVEL 2: At this point, the tasks will get more challenging, because you'll work with datasets too large to handle by just looking at it and reading them.
