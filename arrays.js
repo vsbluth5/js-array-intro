@@ -12,11 +12,11 @@ console.log(anagrams[2])
 // 2. The word "opts" is also an anagram of the word "stop". Find a way to add "opts" to the end of the array.
 anagrams.push("opts")
 
-anagrams.unshift("app")
+// anagrams.unshift("app")  // adds to the beginning
 
 // 3. The word "puts", on the other hand, is not an anagram of the word "stop". Find a way to replace it with the word "pots".
-let index = anagrams.find("puts")
-console.log(index)
+anagrams[anagrams.indexOf("puts")] = "pots"
+
 
 // 4. Use the documentation to figure out what the method ".pop()" does.
 //   Now use it to remove the word "plots" (which isn't a correct anagram of "stop") from our array.
@@ -42,17 +42,14 @@ anagrams.sort()
 
 console.log(fortunes[2])
 
-
-
 // 7. Print out a random fortune from the array.
 
-
+console.log(fortunes[Math.floor(Math.random() * fortunes.length)])
 
 
 // 8. This array is huge, so it'd be helpful to know how many fortunes are listed. Find a way to print out the number of fortunes in the array.
 
-
-
+console.log(fortunes.length)
 
 
 // 9. Challenge: Out of all the fotunes that are there, it'd mess up the program if some were listed twice, but with a array that big, it could happen.
