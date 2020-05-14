@@ -31,7 +31,8 @@ anagrams.sort()
 
 // Pro-tip: to make this easier, scroll down and comment out the line "console.log(anagrams)" so that you aren't printing extra information.
 // 6. The first array is called "fortunes" and contains fortune-cookie style fortunes. Print out the third fortune from the array.
-
+import { fortunes } from 'otherarrays';
+console.log(fortunes[2])
 
 
 
@@ -56,4 +57,4 @@ anagrams.sort()
 
 
 // This code prints the array after you've manipulated it above.
-console.log(anagrams)
+// console.log(anagrams)
