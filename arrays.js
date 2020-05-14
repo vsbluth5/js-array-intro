@@ -55,7 +55,8 @@ console.log(fortunes.length)
 // 9. Challenge: Out of all the fotunes that are there, it'd mess up the program if some were listed twice, but with a array that big, it could happen.
 // Find a way to check and see whether any of the fortunes are duplicates. If so, find a way to delete those duplicates.
 
-
+fortunes= [(new Set(fortunes)
+console.log(fortunes.lehgth)
 
 
 
