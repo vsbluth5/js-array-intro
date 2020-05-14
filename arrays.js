@@ -12,14 +12,22 @@ console.log(anagrams[2])
 // 2. The word "opts" is also an anagram of the word "stop". Find a way to add "opts" to the end of the array.
 anagrams.push("opts")
 
-// 3. The word "puts", on the other hand, is not an anagram of the word "stop". Find a way to replace it with the word "pots".
+anagrams.unshift("app")
 
+// 3. The word "puts", on the other hand, is not an anagram of the word "stop". Find a way to replace it with the word "pots".
+let index = anagrams.find("puts")
+console.log(index)
 
 // 4. Use the documentation to figure out what the method ".pop()" does.
 //   Now use it to remove the word "plots" (which isn't a correct anagram of "stop") from our array.
 
-anagrams.reverse()
-anagrams.pop()
+// anagrams.reverse()
+// anagrams.pop()
+
+// anagrams.shift()
+
+//splice can be used to add or remove any number of elements, see ref
+anagrams.splice(0, 1);
 
 // 5. Put the final array of anagrams in alphabetical order.
 
@@ -31,7 +39,7 @@ anagrams.sort()
 
 // Pro-tip: to make this easier, scroll down and comment out the line "console.log(anagrams)" so that you aren't printing extra information.
 // 6. The first array is called "fortunes" and contains fortune-cookie style fortunes. Print out the third fortune from the array.
-import { fortunes } from 'otherarrays';
+
 console.log(fortunes[2])
 
 
@@ -57,4 +65,4 @@ console.log(fortunes[2])
 
 
 // This code prints the array after you've manipulated it above.
-// console.log(anagrams)
+console.log(anagrams)
