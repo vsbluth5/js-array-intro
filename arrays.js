@@ -1,69 +1,58 @@
-// As you may know, an anagram is a new word created by reorganizing all the letters in a word.
-// This array of anagrams are all based on the word "Stop"
-let anagrams = ["plots", "post", "stop", "puts", "tops"]
+let favFoods = ["Mac & Cheese", "Avocados", "Mango", "French Fries", "Boba"]
+console.log(favFoods[1])
 
-// Run this program after you try each step and see if it worked.
-// At the very bottom of this file is a line of code that prints out the array after your code as run.
-// You're welcome to print additional debugging statements if you need.
+// Change the second favorite food
+favFoods[2] = "Papaya"
+// Print it out to confirm that the value was changed
+console.log(favFoods[2])
 
-// 1. Print out the third word in the array using bracket notation.
-console.log(anagrams[2])
+let favFoods2 = ["Mac & Cheese", "Avocados", "Mango", "French Fries", "Boba"]
 
-// 2. The word "opts" is also an anagram of the word "stop". Find a way to add "opts" to the end of the array.
-anagrams.push("opts")
+favFoods2.forEach(food => {
+  console.log(`I really like ${food}!`)
+})
 
-// anagrams.unshift("app")  // adds to the beginning
+let someNums = [4, 9, 42, 128, 33, 12]
 
-// 3. The word "puts", on the other hand, is not an anagram of the word "stop". Find a way to replace it with the word "pots".
-anagrams[anagrams.indexOf("puts")] = "pots"
+let sum = 0
+someNums.forEach(x => {
+  sum += x
+  console.log(`After adding ${x}, the new total is ${sum}.`)
+})
+console.log(sum)
 
+// OBJECTS
+let taylor = {
+  "hair": "Brown",
+  "eyes": "Brown",
+  "age": 27,
+  "residence": "New York City",
+  "hometown": "Denver"
+}
 
-// 4. Use the documentation to figure out what the method ".pop()" does.
-//   Now use it to remove the word "plots" (which isn't a correct anagram of "stop") from our array.
+let nunzio = {
+  "hair": "Blonde",
+  "eyes": "Hazel",
+  "age": 21,
+  "residence": "Phoenix",
+  "hometown": "Toronto",
+}
 
-// anagrams.reverse()
-// anagrams.pop()
+// Have students predict what will be printed as a result of the following line:
+console.log(nunzio["residence"])
 
-// anagrams.shift()
+// If Nunzio moves, we'll need to change his residence
+nunzio["residence"] = "Dallas"
 
-//splice can be used to add or remove any number of elements, see ref
-anagrams.splice(0, 1);
+// If Nunzio alread has a college property, this will overwrite it.
+// If Nunzio doesn't have a college, this will add one.
+nunzio["college"] = "Northern Arizona University"
 
-// 5. Put the final array of anagrams in alphabetical order.
-
-anagrams.sort()
-
-
-// LEVEL 2: At this point, the tasks will get more challenging, because you'll work with datasets too large to handle by just looking at it and reading them.
-// They're stored in another file called otherarrays.js, which is loaded before this one in the HTML.
-
-// Pro-tip: to make this easier, scroll down and comment out the line "console.log(anagrams)" so that you aren't printing extra information.
-// 6. The first array is called "fortunes" and contains fortune-cookie style fortunes. Print out the third fortune from the array.
-
-console.log(fortunes[2])
-
-// 7. Print out a random fortune from the array.
-
-console.log(fortunes[Math.floor(Math.random() * fortunes.length)])
-
-
-// 8. This array is huge, so it'd be helpful to know how many fortunes are listed. Find a way to print out the number of fortunes in the array.
-
-console.log(fortunes.length)
-
-
-// 9. Challenge: Out of all the fotunes that are there, it'd mess up the program if some were listed twice, but with a array that big, it could happen.
-// Find a way to check and see whether any of the fortunes are duplicates. If so, find a way to delete those duplicates.
-
-// fortunes= [new Set(fortunes)]
-
-fortunes.filter((item, index)=>
-                fortunes.indexOf(item) !== index);
-console.log(fortunes.length)
+// These should have the same result.
+// Dot syntax
+console.log(nunzio.residence)
+// Bracket syntax
+console.log(nunzio["residence"])
 
 
 
-
-
-// This code prints the array after you've manipulated it above.
-console.log(anagrams)
